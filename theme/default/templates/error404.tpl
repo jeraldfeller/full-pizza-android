@@ -1,0 +1,1 @@
+<div align="center"><a href="{$SITE_BASEURL}"><img src="{$SITE_IMAGE_URL}/404-page-notfound-error.jpg" alt="404 Page is not found error" /></a></div>

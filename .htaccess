@@ -1,0 +1,315 @@
+RewriteEngine on
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+	FileETag None
+	<IfModule mod_headers.c>
+	Header unset ETag
+	Header set Cache-Control "max-age=31536000, Public"
+	Header set X-Content-Type-Options "nosniff"
+	Header set X-XSS-Protection "1;mode=block" 
+	</IfModule>
+</FilesMatch>
+
+#RewriteCond %{HTTP_HOST} ^www\.
+#RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+#RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/platinum/$1 [R=301,L]
+
+#RewriteCond   %{REQUEST_FILENAME}  !-f
+
+#--------------------------#Redirect to mobile------------------------------
+#RewriteCond %{REQUEST_URI} !^/http://www.comeneat.com/.*$
+#RewriteCond %{HTTP_USER_AGENT} "android|blackberry|ipad|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
+#RewriteRule ^(.*)$ http://www.comeneat.com/demo/m/ [L,R=302]
+
+#Static Page----------------------------------------------------------------
+RewriteRule ^p/([^\/]+)$ staticPage.php?contentpage=$1 [NC,L]
+RewriteRule ^p/([^\/]+)/$ staticPage.php?contentpage=$1 [NC,L]
+
+#Faq-------------------------------------------------------------------------
+RewriteRule ^faq$ faq.php [NC,L]
+RewriteRule ^faq/$ faq.php [NC,L]
+
+#Contact us------------------------------------------------------------------
+RewriteRule ^contact-us$ contactUs.php [NC,L]
+RewriteRule ^contact-us/$ contactUs.php [NC,L]
+
+RewriteRule ^contact-us/([^\/]+)$ contactUs.php?msg=$1 [NC,L]
+RewriteRule ^contact-us/([^\/]+)/$ contactUs.php?msg=$1 [NC,L]
+
+#Site Feed Back--------------------------------------------------------------
+RewriteRule ^site-feedback$ siteFeedback.php [NC,L]
+RewriteRule ^site-feedback/$ siteFeedback.php [NC,L]
+
+RewriteRule ^go-([^\/]+)$ restaurantOwnerLogin.php?page=$1 [NC,L]
+RewriteRule ^go-([^\/]+)/$ restaurantOwnerLogin.php?page=$1 [NC,L]
+
+#Search Details--------------------------------------------------------------
+RewriteRule ^menu/([0-9]+)/([^\/]+)$ restaurantDetails.php?resid=$1&resname=$2 [NC,L]
+RewriteRule ^menu/([0-9]+)/([^\/]+)/$ restaurantDetails.php?resid=$1&resname=$2 [NC,L]
+
+#Search Result---------------------------------------------------------------
+RewriteRule ^s/([^\/]+)$ searchResult.php?area=$1 [NC,L]
+RewriteRule ^s/([^\/]+)/$ searchResult.php?area=$1 [NC,L]
+
+#--------- Search Index -------------------------
+RewriteRule ^search/([^\/]+)$ searchResult.php?searcharea=$1 [NC,L]
+RewriteRule ^search/([^\/]+)/$ searchResult.php?searcharea=$1 [NC,L]
+
+#--------- Search City --------------------
+#RewriteRule ^searchcity/([^\/]+)$ searchResult.php?city=$1 [NC,L]
+#RewriteRule ^searchcity/([^\/]+)/$ searchResult.php?city=$1 [NC,L]
+
+RewriteRule ^searchcity/([^\/]+)$ searchResult.php?searcharea=$1 [NC,L]
+RewriteRule ^searchcity/([^\/]+)/$ searchResult.php?searcharea=$1 [NC,L]
+
+#--------- Search Cuisine -----------------
+RewriteRule ^searchcuisine/([^\/]+)$ searchResult.php?cuisine=$1 [NC,L]
+RewriteRule ^searchcuisine/([^\/]+)/$ searchResult.php?cuisine=$1 [NC,L]
+
+#--------- Search Cuisine/City ------------
+RewriteRule ^search-cuisine-city/([^\/]+)/([^\/]+)$ searchResult.php?cuisine=$1&city=$2 [NC,L]
+RewriteRule ^search-cuisine-city/([^\/]+)/([^\/]+)/$ searchResult.php?cuisine=$1&city=$2 [NC,L]
+
+#Customer---------------------------------------------------------------------
+RewriteRule ^login$ customerLogin.php [NC,L]
+RewriteRule ^login/$ customerLogin.php [NC,L]
+
+RewriteRule ^register$ customerRegister.php [NC,L]
+RewriteRule ^register/$ customerRegister.php [NC,L]
+
+RewriteRule ^myaccount$ customerMyaccount.php [NC,L]
+RewriteRule ^myaccount/$ customerMyaccount.php [NC,L]
+
+RewriteRule ^login/([^\/]+)$ customerLogin.php?action=$1 [NC,L]
+RewriteRule ^login/([^\/]+)/$ customerLogin.php?action=$1 [NC,L]
+
+RewriteRule ^login/([^\/]+)$ customerLogin.php?msg=$1 [NC,L]
+RewriteRule ^login/([^\/]+)/$ customerLogin.php?msg=$1 [NC,L]
+
+RewriteRule ^customer-activation/([^\/]+)$ customerLogin.php?ui=$1 [NC,L]
+RewriteRule ^customer-activation/([^\/]+)/$ customerLogin.php?ui=$1 [NC,L]
+
+#Customer Checkout-----------------------------------------------------------
+RewriteRule ^checkout$ checkout.php [NC,L]
+RewriteRule ^checkout/$ checkout.php [NC,L]
+
+#Customer Login Checkout-----------------------------------------------------
+RewriteRule ^custlogin/([a-zA-Z0-9_-]+)$ customerLogin.php?pagetype=$1 [NC,L]
+RewriteRule ^custlogin/([a-zA-Z0-9_-]+)/$ customerLogin.php?pagetype=$1 [NC,L]
+
+RewriteRule ^custLogin/([^\/]+)/([^\/]+)/([^\/]+)$ customerLogin.php?pagetype=$1&resid=$2&resname=$3 [NC,L]
+RewriteRule ^custLogin/([^\/]+)/([^\/]+)/([^\/]+)/$ customerLogin.php?pagetype=$1&resid=$2&resname=$3 [NC,L]
+
+#Customer Reset Password-----------------------------------------------------
+RewriteRule ^customer-reset-password/([^\/]+)$ customerResetPassword.php?msg=$1 [NC,L]
+RewriteRule ^customer-reset-password/([^\/]+)/$ customerResetPassword.php?msg=$1 [NC,L]
+
+RewriteRule ^customer-reset-password/([^\/]+)$ customerResetPassword.php?ui=$1 [NC,L]
+RewriteRule ^customer-reset-password/([^\/]+)/$ customerResetPassword.php?ui=$1 [NC,L]
+
+#Success---------------------------------------------------------------------
+RewriteRule ^success/([^\/]+)$ success.php?action=$1 [NC,L]
+RewriteRule ^success/([^\/]+)/$ success.php?action=$1 [NC,L]
+
+#Category Manage----------------------------------------------------------------
+RewriteRule ^category/([^\/]+)$ categoryManage.php?resid=$1 [NC,L]
+RewriteRule ^category/([^\/]+)/$ categoryManage.php?resid=$1 [NC,L]
+
+#Restaurant Owner------------------------------------------------------------
+RewriteRule ^restaurant-register$ restaurantOwnerRegister.php [NC,L]
+RewriteRule ^restaurant-register/$ restaurantOwnerRegister.php [NC,L]
+
+RewriteRule ^restaurant-login$ restaurantOwnerLogin.php [NC,L]
+RewriteRule ^restaurant-login/$ restaurantOwnerLogin.php [NC,L]
+
+RewriteRule ^restaurant-myaccount$ restaurantOwnerMyaccount.php [NC,L]
+RewriteRule ^restaurant-myaccount/$ restaurantOwnerMyaccount.php [NC,L]
+
+RewriteRule ^restaurant-login/([^\/]+)$ restaurantOwnerLogin.php?msg=$1 [NC,L]
+RewriteRule ^restaurant-login/([^\/]+)/$ restaurantOwnerLogin.php?msg=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-order$ restaurantOwnerMyaccount_order.php [NC,L]
+RewriteRule ^restaurant-myaccount-order/$ restaurantOwnerMyaccount_order.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-order/([^\/]+)$ restaurantOwnerMyaccount_order.php?sortbystatus=$1 [NC,L]
+RewriteRule ^restaurant-myaccount-order/$([^\/]+)/$ restaurantOwnerMyaccount_order.php?sortbystatus=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-report$ restaurantOwnerMyaccount_report.php [NC,L]
+RewriteRule ^restaurant-myaccount-report/$ restaurantOwnerMyaccount_report.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-category$ restaurantOwnerMyaccount_category.php [NC,L]
+RewriteRule ^restaurant-myaccount-category/$ restaurantOwnerMyaccount_category.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-category-add$ restaurantOwnerMyaccount_categoryAddEdit.php [NC,L]
+RewriteRule ^restaurant-myaccount-category-add/$ restaurantOwnerMyaccount_categoryAddEdit.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-category-edit/([^\/]+)$ restaurantOwnerMyaccount_categoryAddEdit.php?catid=$1 [NC,L]
+RewriteRule ^restaurant-myaccount-category-edit/$([^\/]+)/$ restaurantOwnerMyaccount_categoryAddEdit.php?catid=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-menu$ restaurantOwnerMyaccount_menu.php [NC,L]
+RewriteRule ^restaurant-myaccount-menu/$ restaurantOwnerMyaccount_menu.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-menu-add$ restaurantOwnerMyaccount_menuAddEdit.php [NC,L]
+RewriteRule ^restaurant-myaccount-menu-add/$ restaurantOwnerMyaccount_menuAddEdit.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-menu-edit/([^\/]+)$ restaurantOwnerMyaccount_menuAddEdit.php?menuid=$1 [NC,L]
+RewriteRule ^restaurant-myaccount-menu-edit/([^\/]+)/$ restaurantOwnerMyaccount_menuAddEdit.php?menuid=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-addons$ restaurantOwnerMyaccount_addons.php [NC,L]
+RewriteRule ^restaurant-myaccount-addons/$ restaurantOwnerMyaccount_addons.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-addons$ restaurantOwnerMyaccount_addons.php [NC,L]
+RewriteRule ^restaurant-myaccount-addons/$ restaurantOwnerMyaccount_addons.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-addons-add$ restaurantOwnerMyaccount_addonsAddEdit.php [NC,L]
+RewriteRule ^restaurant-myaccount-addons-add/$ restaurantOwnerMyaccount_addonsAddEdit.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-addons-edit/([^\/]+)$ restaurantOwnerMyaccount_addonsAddEdit.php?addonid=$1 [NC,L]
+RewriteRule ^restaurant-myaccount-addons-edit/([^\/]+)/$ restaurantOwnerMyaccount_addonsAddEdit.php?addonid=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-offers$ restaurantOwnerMyaccount_offers.php [NC,L]
+RewriteRule ^restaurant-myaccount-offers/$ restaurantOwnerMyaccount_offers.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-offers-add$ restaurantOwnerMyaccount_offers_AddEdit.php [NC,L]
+RewriteRule ^restaurant-myaccount-offers-add/$ restaurantOwnerMyaccount_offers_AddEdit.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-offers-edit/([^\/]+)$ restaurantOwnerMyaccount_offers_AddEdit.php?offer_id=$1 [NC,L]
+RewriteRule ^restaurant-myaccount-offers-edit/([^\/]+)/$ restaurantOwnerMyaccount_offers_AddEdit.php?offer_id=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-deal$ restaurantOwnerMyaccount_deal.php [NC,L]
+RewriteRule ^restaurant-myaccount-deal/$ restaurantOwnerMyaccount_deal.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-deal-add$ restaurantOwnerMyaccount_dealAddEdit.php [NC,L]
+RewriteRule ^restaurant-myaccount-deal-add/$ restaurantOwnerMyaccount_dealAddEdit.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-deal-edit/([^\/]+)$ restaurantOwnerMyaccount_dealAddEdit.php?dealid=$1 [NC,L]
+RewriteRule ^restaurant-myaccount-deal-edit/([^\/]+)/$ restaurantOwnerMyaccount_dealAddEdit.php?dealid=$1 [NC,L]
+
+RewriteRule ^restaurant-myaccount-deal$ restaurantOwnerMyaccount_deal.php [NC,L]
+RewriteRule ^restaurant-myaccount-deal/$ restaurantOwnerMyaccount_deal.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-payment$ restaurantOwnerMyaccount_payment.php [NC,L]
+RewriteRule ^restaurant-myaccount-payment/$ restaurantOwnerMyaccount_payment.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-setting$ restaurantOwnerMyaccount_setting.php [NC,L]
+RewriteRule ^restaurant-myaccount-setting/$ restaurantOwnerMyaccount_setting.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-book$ restaurantOwnerMyaccount_bookings.php [NC,L]
+RewriteRule ^restaurant-myaccount-book/$ restaurantOwnerMyaccount_bookings.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-review$ restaurantOwnerMyaccount_reviews.php [NC,L]
+RewriteRule ^restaurant-myaccount-review/$ restaurantOwnerMyaccount_reviews.php [NC,L]
+
+RewriteRule ^restaurant-myaccount-invoice$ restaurantOwnerMyaccount_invoice.php [NC,L]
+RewriteRule ^restaurant-myaccount-invoice/$ restaurantOwnerMyaccount_invoice.php [NC,L]
+
+#Restaurant Reset Password-----------------------------------------------------
+#RewriteRule ^restaurant-reset-password/([^\/]+)$ restaurantResetPassword.php?msg=$1 [NC,L]
+#RewriteRule ^restaurant-reset-password/([^\/]+)/$ restaurantResetPassword.php?msg=$1 [NC,L]
+
+RewriteRule ^restaurant-reset-password/([^\/]+)$ restaurantResetPassword.php?ui=$1 [NC,L]
+RewriteRule ^restaurant-reset-password/([^\/]+)/$ restaurantResetPassword.php?ui=$1 [NC,L]
+
+#Restaurant Owner Thanks-----------------------------------------------------
+RewriteRule ^rest_thanks$ restaurantOwnerThanks.php [NC,L]
+RewriteRule ^rest_thanks/$ restaurantOwnerThanks.php [NC,L]
+
+#Inner Pages-----------------------------------------------------------------
+RewriteRule ^restaurants/([^\/]+)$ restaurant_innerpage.php?browse=$1 [NC,L]
+RewriteRule ^restaurants/([^\/]+)/$ restaurant_innerpage.php?browse=$1 [NC,L]
+
+RewriteRule ^cuisine-by-area/([^\/]+)$ restaurant_innerpage.php?cuisine=$1 [NC,L]
+RewriteRule ^cuisine-by-area/([^\/]+)/$ restaurant_innerpage.php?cuisine=$1 [NC,L]
+
+RewriteRule ^cuisine/([^\/]+)$ restaurantCuisineInnerpage.php?cuisine=$1 [NC,L]
+RewriteRule ^cuisine/([^\/]+)/$ restaurantCuisineInnerpage.php?cuisine=$1 [NC,L]
+
+RewriteRule ^city/([^\/]+)/([^\/]+)$ restaurantCityInnerpage.php?cuisine=$1&city=$2 [NC,L]
+RewriteRule ^city/([^\/]+)/([^\/]+)/$ restaurantCityInnerpage.php?cuisine=$1&city=$2 [NC,L]
+
+RewriteRule ^search-city-zip/([^\/]+)/([^\/]+)$ restaurant_innerpage.php?cityname=$1&zipcode=$2 [NC,L]
+RewriteRule ^search-city-zip/([^\/]+)/([^\/]+)/$ restaurant_innerpage.php?cityname=$1&zipcode=$2 [NC,L]
+
+RewriteRule ^search-city-cuisine/([^\/]+)/([^\/]+)$ restaurant_innerpage.php?cityname=$1&cuisine=$2 [NC,L]
+RewriteRule ^search-city-cuisine/([^\/]+)/([^\/]+)/$ restaurant_innerpage.php?cityname=$1&cuisine=$2 [NC,L]
+
+#Thanks Pages----------------------------------------------------------------
+RewriteRule ^order-success/([^\/]+)$ thanks.php?orderid=$1 [NC,L]
+RewriteRule ^order-success/([^\/]+)/$ thanks.php?orderid=$1 [NC,L]
+
+#Ajax File-----------------------------------------------------
+RewriteRule ^use-file$ ajaxFile.php [NC,L]
+RewriteRule ^use-file$/$ ajaxFile.php [NC,L]
+
+RewriteRule ^use-file/([^\/]+)$ ajaxFile.php?action=$1 [NC,L]
+RewriteRule ^use-file/([^\/]+)/$ ajaxFile.php?action=$1 [NC,L]
+
+RewriteRule ^use-file-pincode-auto-suggest/([^\/]+)/([^\/]+)/([^\/]+)$ ajaxFile.php?action=$1&state=$2&city=$3 [NC,L]
+RewriteRule ^use-file-pincode-auto-suggest/([^\/]+)/([^\/]+)/([^\/]+)/$ ajaxFile.php?action=$1&state=$2&city=$3 [NC,L]
+
+#Ajax Action File-----------------------------------------------------
+RewriteRule ^use-action$ ajaxAction.php [NC,L]
+RewriteRule ^use-action$/$ ajaxAction.php [NC,L]
+
+RewriteRule ^use-action/([^\/]+)$ ajaxAction.php?action=$1 [NC,L]
+RewriteRule ^use-action/([^\/]+)/$ ajaxAction.php?action=$1 [NC,L]
+
+#Ajax Action Restaurant-----------------------------------------------------
+RewriteRule ^use-restaurant$ ajaxActionRestaurant.php [NC,L]
+RewriteRule ^use-restaurant$/$ ajaxActionRestaurant.php [NC,L]
+
+RewriteRule ^use-restaurant/([^\/]+)$ ajaxActionRestaurant.php?action=$1 [NC,L]
+RewriteRule ^use-restaurant/([^\/]+)/$ ajaxActionRestaurant.php?action=$1 [NC,L]
+
+#Search Result Ajax Action File-----------------------------------------------------
+RewriteRule ^use-search$ searchResultAjax.php [NC,L]
+RewriteRule ^use-search/$ searchResultAjax.php [NC,L]
+
+RewriteRule ^use-search/([^\/]+)$ searchResultAjax.php?action=$1 [NC,L]
+RewriteRule ^use-search/([^\/]+)/$ searchResultAjax.php?action=$1 [NC,L]
+
+#PDF-----------------------------------------------------
+RewriteRule ^full-details-order-pdf/([^\/]+)$ viewfullDetailsPDF.php?orderid=$1 [NC,L]
+RewriteRule ^full-details-order-pdf/([^\/]+)/$ viewfullDetailsPDF.php?orderid=$1 [NC,L]
+
+#Offline-----------------------------------------------------
+RewriteRule ^offline$  offline.php [NC,L]
+RewriteRule ^offline/$ offline.php [NC,L]
+
+#Error pages-----------------------------------------------------
+RewriteRule ^400-bad-request$ error400.php [NC,L]
+RewriteRule ^400-bad-request/$ error400.php [NC,L]
+
+RewriteRule ^401-authorization-required$ error401.php [NC,L]
+RewriteRule ^401-authorization-required/$ error401.php [NC,L]
+
+RewriteRule ^403-permission-denied$ error403.php [NC,L]
+RewriteRule ^403-permission-denied/$ error403.php [NC,L]
+
+RewriteRule ^404-page-not-found-error$ error404.php [NC,L]
+RewriteRule ^404-page-not-found-error/$ error404.php [NC,L]
+
+RewriteRule ^406-not-acceptable-error$ error406.php [NC,L]
+RewriteRule ^406-not-acceptable-error/$ error406.php [NC,L]
+
+#ErrorDocument 404 /error404.php
+
+#ErrorDocument 404 http://comeneat.com/platinum/error404.php
+#ErrorDocument 404 http://www.%{HTTP_HOST}/platinum/error404.php
+
+#Live
+#ErrorDocument 400 /platinum/400-bad-request/
+#ErrorDocument 401 /platinum/401-authorization-required/
+#ErrorDocument 403 /platinum/403-permission-denied/
+#ErrorDocument 404 /platinum/404-page-not-found-error/
+#ErrorDocument 406 /platinum/406-not-acceptable-error/
+
+#Local
+ErrorDocument 400 /subversion/comeneat_pv1/400-bad-request/
+ErrorDocument 401 /subversion/comeneat_pv1/401-authorization-required/
+ErrorDocument 403 /subversion/comeneat_pv1/403-permission-denied/
+ErrorDocument 404 /subversion/comeneat_pv1/404-page-not-found-error/
+ErrorDocument 406 /subversion/comeneat_pv1/406-not-acceptable-error/

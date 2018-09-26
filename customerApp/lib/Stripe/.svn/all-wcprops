@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn_speant/!svn/ver/5/lib/Stripe
+END
+BalanceTransaction.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn_speant/!svn/ver/5/lib/Stripe/BalanceTransaction.php
+END
+Invoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn_speant/!svn/ver/5/lib/Stripe/Invoice.php
+END
+Account.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn_speant/!svn/ver/5/lib/Stripe/Account.php
+END
+Customer.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn_speant/!svn/ver/5/lib/Stripe/Customer.php
+END
+Coupon.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn_speant/!svn/ver/5/lib/Stripe/Coupon.php
+END
+AttachedObject.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_speant/!svn/ver/5/lib/Stripe/AttachedObject.php
+END
+RateLimitError.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_speant/!svn/ver/5/lib/Stripe/RateLimitError.php
+END
+SingletonApiResource.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn_speant/!svn/ver/5/lib/Stripe/SingletonApiResource.php
+END
+Object.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn_speant/!svn/ver/5/lib/Stripe/Object.php
+END
+Stripe.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn_speant/!svn/ver/5/lib/Stripe/Stripe.php
+END
+Card.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_speant/!svn/ver/5/lib/Stripe/Card.php
+END
+InvalidRequestError.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn_speant/!svn/ver/5/lib/Stripe/InvalidRequestError.php
+END
+InvoiceItem.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn_speant/!svn/ver/5/lib/Stripe/InvoiceItem.php
+END
+Util.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_speant/!svn/ver/5/lib/Stripe/Util.php
+END
+Refund.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn_speant/!svn/ver/5/lib/Stripe/Refund.php
+END
+ApplicationFee.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_speant/!svn/ver/5/lib/Stripe/ApplicationFee.php
+END
+ApiRequestor.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_speant/!svn/ver/5/lib/Stripe/ApiRequestor.php
+END
+Transfer.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn_speant/!svn/ver/5/lib/Stripe/Transfer.php
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn_speant/!svn/ver/5/lib/Stripe/Error.php
+END
+AuthenticationError.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn_speant/!svn/ver/5/lib/Stripe/AuthenticationError.php
+END
+Charge.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn_speant/!svn/ver/5/lib/Stripe/Charge.php
+END
+Plan.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_speant/!svn/ver/5/lib/Stripe/Plan.php
+END
+ApiConnectionError.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn_speant/!svn/ver/5/lib/Stripe/ApiConnectionError.php
+END
+List.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_speant/!svn/ver/5/lib/Stripe/List.php
+END
+Token.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn_speant/!svn/ver/5/lib/Stripe/Token.php
+END
+Event.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn_speant/!svn/ver/5/lib/Stripe/Event.php
+END
+ApiResource.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn_speant/!svn/ver/5/lib/Stripe/ApiResource.php
+END
+Recipient.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn_speant/!svn/ver/5/lib/Stripe/Recipient.php
+END
+ApiError.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn_speant/!svn/ver/5/lib/Stripe/ApiError.php
+END
+CardError.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn_speant/!svn/ver/5/lib/Stripe/CardError.php
+END
+Subscription.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_speant/!svn/ver/5/lib/Stripe/Subscription.php
+END
+Balance.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn_speant/!svn/ver/5/lib/Stripe/Balance.php
+END

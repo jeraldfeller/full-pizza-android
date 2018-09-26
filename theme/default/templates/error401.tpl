@@ -1,0 +1,1 @@
+<div align="center"><a href="{$SITE_BASEURL}"><img src="{$SITE_IMAGE_URL}/401-authorization-required.jpg" alt="401-authorization-required error" /></a></div>

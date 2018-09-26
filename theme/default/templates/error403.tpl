@@ -1,0 +1,1 @@
+<div align="center"><a href="{$SITE_BASEURL}"><img src="{$SITE_IMAGE_URL}/403-permission-denied.jpg" alt="403 permission denied error" /></a></div>

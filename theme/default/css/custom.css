@@ -1,0 +1,275 @@
+html {
+	background-color: #FDCC06 !important;
+}
+
+.fondo {
+	background-color: #FDCC06 !important;
+}
+
+.fondo2 {
+    background: url(/theme/default/images/principalBackground.png) no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+}
+
+.navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+   display: table-cell;
+    width: 10%;
+    float: none;
+}
+
+.navbar-collapse li a{
+	display: table-cell;
+    width: 10%;
+    float: none;
+}
+
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .75);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.navbar-default {
+    background-color: #FFDB53;
+    border-color: #FFDB53;
+
+}
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	font-weight: bolder !important;
+    background-color: transparent;
+    color: #000300;
+    border-bottom: 6px solid #000300;
+    padding: 0; /*removing spacing*/
+    margin: 14px; /*add spacing*/
+    padding-bottom: 10px;
+}
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 0px solid rgba(255, 255, 255, .75);
+    border-right: 0px solid rgba(0, 0, 0, .1); 
+    color: #000300;
+}
+
+.carlos{
+	background-image: url("/theme/default/images/Reticula3.png");
+    background-repeat: repeat-x;
+	height:35px;
+	
+}
+
+@media (max-width: 991px) {
+  .userIcon{
+  	margin-left: 38%;
+  }
+
+  .home{
+  	margin-left: 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .venezuelaIcon {
+    margin-top: 60px !important;
+  }  
+
+  .homeLogo {
+    width: 39% !important;
+  }
+
+  .fullPizzaLogo{
+  	width: 75% !important;
+  	margin-left: 12%;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  
+  .homeLogo {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  
+  .homeLogo {
+    width: 80% !important;
+  }
+
+  .fullPizzaLogo{
+  	width: 100% !important;
+  	margin-left: 12%;
+  }
+
+  .countrySelectDiv{
+  	margin-top: 20px !important;
+  }
+
+  .countryLogosDiv{
+  	margin-top: 20px !important;
+  }
+
+  .venezuelaIcon{
+  	margin-bottom: 20px !important;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 768px) {  
+  .fullPizzaLogo{
+  	width: 80% !important;
+  	margin-left: 10%;
+  }
+  .homeLogo {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .homeLogo {
+    width: 100% !important;
+  }
+
+  .fullPizzaLogo{
+  	width: 65% !important;
+  	margin-left: 8%;
+  }
+
+}
+
+@media (min-width: 1190px) {
+  .homeLogo {
+    width: 85% !important;
+  }
+
+  .fullPizzaLogo{
+  	width: 57% !important;
+  	margin-left: 11%;
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  .homeLogo {
+    width: 70% !important;
+  }
+
+  .fullPizzaLogo{
+  	width: 48% !important;
+  	margin-left: 14%;
+  }
+  
+}
+
+
+@media (min-width: 1600px) {
+  .homeLogo {
+    width: 60% !important;
+  }
+  .home{
+  	margin-left: 32%;
+  }
+  .fullPizzaLogo{
+  	width: 40% !important;
+  	margin-left: 20%;
+  }
+}
+
+.bordesInputs{
+  border-style: solid !important;
+  border-width: 2px 2px 2px 2px !important;
+  border-color: #3F3F3F !important;
+  border-radius: 15px !important;
+}
+
+.bordeContenedores{
+  border-radius: 15px !important;
+  box-shadow: 11px 11px 15px #C8A503;
+  background: #ffffff;    
+  padding: 20px;
+}
+
+.reticulaInterna{
+  background-image: url("/theme/default/images/Reticula4.png");
+    background-repeat: repeat-x;
+  height:25px;
+  
+
+}
+
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    margin:10px;
+}
+.iconosDirecciones {
+    width: 65%;
+    height: auto;
+    
+}
+.caption {
+    display: block;
+}
+
+.optionSelected{
+    border: solid 2px gray;
+    border-radius: 5px; 
+    padding: 5px; 
+}
+
+.optionSelected2{
+    border: solid 2px gray;
+    border-radius: 5px; 
+    padding: 5px; 
+}
+
+
+.myaccInnerNewMenuUlNew li {
+    display: table-cell;
+    width: 13% !important;
+    float: none;
+}
+
+
+
+

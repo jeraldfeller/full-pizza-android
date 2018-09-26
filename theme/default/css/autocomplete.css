@@ -1,0 +1,26 @@
+/* Auto suggest*/
+.ui-autocomplete { position: absolute; cursor: default; font:italic 13px opensans; color:#999;}	
+.ui-autocomplete-loading { background:url(../images/loader_nonveg.gif) right center no-repeat #fff;  }
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+/* Menu
+----------------------------------*/
+.ui-menu-sugg {list-style:none;margin: 0;display:block;}
+.ui-menu-sugg .ui-menu-sugg-item {margin:0;zoom: 1;float: left;clear: left;width: 100%;}
+.ui-menu-sugg .ui-menu-sugg-item a {text-decoration:none;display:block;zoom:1; padding:10px 15px; border-bottom: 1px solid #ccc; font: 400 14px Roboto;}
+/* Component containers
+----------------------------------*/
+.ui-widget-sugg-content{background:#fff;color:#222222;height:152px;overflow-y:auto;margin:0; }
+/* Overlays
+----------------------------------*/
+.ui-widget-sugg-overlay {opacity:.30;filter:Alpha(Opacity=30);}
+.ui-widget-sugg-shadow {opacity:.30;filter:Alpha(Opacity=30);}
+/* Overlays */
+.ui-widget-sugg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Interaction states
+----------------------------------*/
+.ui-state-default-sugg a, .ui-state-default-sugg a:link, .ui-state-default-sugg a:visited{text-decoration: none;}
+.ui-state-hover a, .ui-state-hover a:hover {text-decoration: none;}
+.ui-state-active-sugg a, .ui-state-active-sugg a:link, .ui-state-active-sugg a:visited{text-decoration: none;}
+.ui-widget-sugg :active {outline: none;}
+.ui-state-hover-sugg-sugg, .ui-widget-sugg-content .ui-state-hover-sugg, .ui-widget-sugg-header .ui-state-hover-sugg, .ui-state-focus, .ui-widget-sugg-content .ui-state-focus, .ui-widget-sugg-header .ui-state-focus {background: #F4F4F4;}

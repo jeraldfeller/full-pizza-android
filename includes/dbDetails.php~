@@ -1,0 +1,12 @@
+<?php
+		
+		#Site Base Url Folder
+		define("SITE_FOLDER","/");
+
+		#Database Details
+		define("DATABASE_HOST","localhost");
+		define("DATABASE_USER","root");
+		define("DATABASE_PWD","root");
+		define("DATABASE_NAME","newcoomeneat");
+		define("TBL_PREFIX","rt_");
+?>

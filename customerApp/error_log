@@ -1,0 +1,46 @@
+[16-Oct-2015 15:32:57 Asia/Kolkata] PHP Fatal error:  Call to undefined function getMultiValue() in /home/eathealthy/public_html/v2/customerApp/common.php on line 30
+[16-Oct-2015 15:33:18 Asia/Kolkata] PHP Fatal error:  Call to undefined function getMultiValue() in /home/eathealthy/public_html/v2/customerApp/common.php on line 30
+[16-Oct-2015 16:38:06 Asia/Kolkata] PHP Fatal error:  Using $this when not in object context in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 305
+[19-Oct-2015 17:51:52 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::voucherDetailByCode() in /home/eathealthy/public_html/v2/customerApp/common.php on line 69
+[19-Oct-2015 17:53:54 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::voucherDetailByCode() in /home/eathealthy/public_html/v2/customerApp/common.php on line 69
+[19-Oct-2015 20:24:47 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[19-Oct-2015 20:24:53 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[19-Oct-2015 20:24:54 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[19-Oct-2015 20:24:55 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[20-Oct-2015 09:20:54 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[20-Oct-2015 09:20:55 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[20-Oct-2015 09:20:57 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[20-Oct-2015 10:33:00 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::HourMinuteToDecimalBook() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 5950
+[12-Nov-2015 04:55:22 UTC] PHP Parse error:  syntax error, unexpected '" GROUP BY rest.restaurant_id ' (T_CONSTANT_ENCAPSED_STRING) in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 135
+[12-Nov-2015 06:32:35 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 149
+[12-Nov-2015 06:52:08 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 104
+[12-Nov-2015 12:28:13 Asia/Kolkata] PHP Warning:  implode(): Invalid arguments passed in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 40
+[12-Nov-2015 12:35:29 Asia/Kolkata] PHP Warning:  implode(): Invalid arguments passed in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 40
+[12-Nov-2015 12:35:35 Asia/Kolkata] PHP Warning:  implode(): Invalid arguments passed in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 40
+[12-Nov-2015 12:35:44 Asia/Kolkata] PHP Warning:  implode(): Invalid arguments passed in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 40
+[12-Nov-2015 12:37:34 Asia/Kolkata] PHP Warning:  implode(): Invalid arguments passed in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 40
+[12-Nov-2015 12:37:41 Asia/Kolkata] PHP Warning:  implode(): Invalid arguments passed in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 40
+[12-Nov-2015 08:42:38 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 4071
+[12-Nov-2015 14:31:51 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::process() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 153
+[12-Nov-2015 14:33:17 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::process() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 153
+[12-Nov-2015 14:36:01 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::remove() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 170
+[12-Nov-2015 14:36:26 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::decode() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 170
+[12-Nov-2015 14:36:45 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::filterTags() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 183
+[12-Nov-2015 14:37:27 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::safeSQL() in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 154
+[12-Nov-2015 14:38:19 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 350
+[12-Nov-2015 14:38:19 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 350
+[12-Nov-2015 14:38:19 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 350
+[12-Nov-2015 14:38:19 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 350
+[12-Nov-2015 14:38:19 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 350
+[12-Nov-2015 14:38:19 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 350
+[12-Nov-2015 11:46:33 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 746
+[12-Nov-2015 11:46:48 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 746
+[12-Nov-2015 11:48:00 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 746
+[12-Nov-2015 11:52:36 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 56
+[18-Nov-2015 11:51:57 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 1151
+[18-Nov-2015 11:59:24 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 56
+[20-Nov-2015 10:22:34 Asia/Kolkata] PHP Fatal error:  Using $this when not in object context in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 254
+[20-Nov-2015 10:22:52 Asia/Kolkata] PHP Fatal error:  Call to undefined method Site::cusinecount() in /home/eathealthy/public_html/v2/customerApp/restaurant.php on line 258
+[25-Nov-2015 16:49:39 Asia/Kolkata] PHP Warning:  file_get_contents(http://maps.google.com/maps/api/geocode/json?address=+Chennai,+Tamil+Nadu,+India&amp;sensor=false): failed to open stream: Connection timed out in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 1840
+[25-Nov-2015 16:50:49 Asia/Kolkata] PHP Warning:  file_get_contents(http://maps.google.com/maps/api/geocode/json?address=+Chennai,+Tamil+Nadu,+India&amp;sensor=false): failed to open stream: Connection timed out in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 1840
+[25-Nov-2015 16:52:14 Asia/Kolkata] PHP Warning:  file_get_contents(http://maps.google.com/maps/api/geocode/json?address=+Chennai,+Tamil+Nadu,+India&amp;sensor=false): failed to open stream: Connection timed out in /home/eathealthy/public_html/v2/customerApp/includes/classes/class.Site.php on line 1840
